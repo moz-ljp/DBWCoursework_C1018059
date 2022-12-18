@@ -34,7 +34,7 @@ if(isset($_POST['submit']))
         <div class="row" style="margin:20px;">
         <div class="col-sm-3">
             <button type="submit" name="submit" class="btn btn-success" style="margin-bottom: 5px;">Submit</button>
-            <button class="btn btn-danger" style="margin-bottom: 5px;" href="customerManageAccount.php">Cancel</button>
+            <a class="btn btn-danger" style="margin-bottom: 5px;" href="customerManageAccount.php">Cancel</a>
             </div>
         </div>
 

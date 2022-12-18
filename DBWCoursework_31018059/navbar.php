@@ -70,7 +70,8 @@ if(isset($_GET["killSession"]))
         <header>
     
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" class="smallspace" href="index.php" style="margin-left:40%;">MiniGyms</a>
+            <a href="index.php"><img src="images/logo.png" height="40px" width="40px" style="margin-left:5px;"></a>
+            <a class="navbar-brand" class="smallspace" href="index.php" style="margin-left:38%;">MiniGyms</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -87,7 +88,7 @@ if(isset($_GET["killSession"]))
                         else if($_SESSION["Staff"]["Role"] == "Staff") {?><a class="nav-item nav-link" href="viewCustomers.php">Manage Customers</a><?php ;}
                         
                     }?>
-                    <?php if(isset($_SESSION["Staff"])) {?><a class="nav-item nav-link" href="adjustMembershipPrices.php">Adjust Prices</a><?php ;} ?>
+                    <?php if(isset($_SESSION["Staff"])) { if($_SESSION["Staff"]["Role"] == "Staff") {?><a class="nav-item nav-link" href="adjustMembershipPrices.php">Adjust Prices</a><?php ;};} ?>
                     <?php if(isset($_SESSION["username"])){ ?><a class="nav-item nav-link" href="?killSession">Log Out</a><?php ;}?>
                 </div>
             </div>

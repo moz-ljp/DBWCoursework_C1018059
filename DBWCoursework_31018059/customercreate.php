@@ -56,9 +56,9 @@ if(isset($_POST['submit']))
     if($allfields == true)
     {
         $firstname = $_POST['firstname'];
-        $firstnameusername = substr($firstname, 0, 2);
+        $firstnameusername = substr($firstname, 0, 3); //use the first 3 letters of their first name
         $surname = $_POST['surname'];
-        $surnameusername = substr($surname, -2);
+        $surnameusername = substr($surname, -2); //and the last two letters of their surname
         $numbers = rand(10,99);
         $username = $firstnameusername.$surnameusername.$numbers;
         //echo $username;

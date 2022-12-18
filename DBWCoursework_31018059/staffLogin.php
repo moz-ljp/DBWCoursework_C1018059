@@ -84,6 +84,7 @@ if(isset($_POST['submit']))
             </div>
         </div>
 
+        <!--
         <div class="row" style="margin:20px;">
             <div class="col-sm-6">
             <a href="forgotpass.php">I Forgot My Password</a>
@@ -92,6 +93,7 @@ if(isset($_POST['submit']))
             <a href="forgotUsername.php">I Forgot My Username</a>
             </div>
         </div>
+        -->
         
 
         <div class="row" style="margin:20px;">
